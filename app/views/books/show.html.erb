@@ -1,0 +1,12 @@
+json.status "success"
+json.data do
+  json.extract! @book
+    :id,
+    :isbn,
+    :book_name,
+    :stocks,
+    :deleted_at,
+    :created_at,
+    :updated_at
+  end
+end
